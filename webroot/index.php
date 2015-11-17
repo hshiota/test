@@ -1,10 +1,6 @@
-
 <?php
 
-$link = mysql_connect('localhost', 'shaka', 'testuser');
+$db = new Database();
+$res = $db->select('select * from users;');
+var_dump($res);exit;
 
-if (!$link) {
-  print(mysql_error());
-} else {
-print("接続成功！");
-}
