@@ -1,0 +1,210 @@
+@charset "UTF-8";
+.icon, .icon--like, .icon--related, .icon--follow, .icon--contact, .icon--humberger, .icon--search, .icon--tag, .icon--delete, .icon--plus, .icon--pinMap, .icon--arrowLeft, .icon--arrowRight, .icon--pageTop, .icon--check, .icon--arrowDown, .icon--reverseTriangle, .icon--expand, .icon--fileAdd, .icon--file, .icon--scrap, .icon--download, .icon--logo {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1; }
+  .xSmall.icon, .xSmall.icon--like, .xSmall.icon--related, .xSmall.icon--follow, .xSmall.icon--contact, .xSmall.icon--humberger, .xSmall.icon--search, .xSmall.icon--tag, .xSmall.icon--delete, .xSmall.icon--plus, .xSmall.icon--pinMap, .xSmall.icon--arrowLeft, .xSmall.icon--arrowRight, .xSmall.icon--pageTop, .xSmall.icon--check, .xSmall.icon--arrowDown, .xSmall.icon--reverseTriangle, .xSmall.icon--expand, .xSmall.icon--fileAdd, .xSmall.icon--file, .xSmall.icon--scrap, .xSmall.icon--download, .xSmall.icon--logo {
+    width: 12px;
+    height: 12px;
+    line-height: 12px; }
+  .small.icon, .small.icon--like, .small.icon--related, .small.icon--follow, .small.icon--contact, .small.icon--humberger, .small.icon--search, .small.icon--tag, .small.icon--delete, .small.icon--plus, .small.icon--pinMap, .small.icon--arrowLeft, .small.icon--arrowRight, .small.icon--pageTop, .small.icon--check, .small.icon--arrowDown, .small.icon--reverseTriangle, .small.icon--expand, .small.icon--fileAdd, .small.icon--file, .small.icon--scrap, .small.icon--download, .small.icon--logo {
+    width: 16px;
+    height: 16px;
+    line-height: 16px; }
+  .large.icon, .large.icon--like, .large.icon--related, .large.icon--follow, .large.icon--contact, .large.icon--humberger, .large.icon--search, .large.icon--tag, .large.icon--delete, .large.icon--plus, .large.icon--pinMap, .large.icon--arrowLeft, .large.icon--arrowRight, .large.icon--pageTop, .large.icon--check, .large.icon--arrowDown, .large.icon--reverseTriangle, .large.icon--expand, .large.icon--fileAdd, .large.icon--file, .large.icon--scrap, .large.icon--download, .large.icon--logo {
+    width: 32px;
+    height: 32px;
+    line-height: 32px; }
+  .xLarge.icon, .xLarge.icon--like, .xLarge.icon--related, .xLarge.icon--follow, .xLarge.icon--contact, .xLarge.icon--humberger, .xLarge.icon--search, .xLarge.icon--tag, .xLarge.icon--delete, .xLarge.icon--plus, .xLarge.icon--pinMap, .xLarge.icon--arrowLeft, .xLarge.icon--arrowRight, .xLarge.icon--pageTop, .xLarge.icon--check, .xLarge.icon--arrowDown, .xLarge.icon--reverseTriangle, .xLarge.icon--expand, .xLarge.icon--fileAdd, .xLarge.icon--file, .xLarge.icon--scrap, .xLarge.icon--download, .xLarge.icon--logo {
+    width: 48px;
+    height: 48px;
+    line-height: 48px; }
+  .icon svg, .icon--like svg, .icon--related svg, .icon--follow svg, .icon--contact svg, .icon--humberger svg, .icon--search svg, .icon--tag svg, .icon--delete svg, .icon--plus svg, .icon--pinMap svg, .icon--arrowLeft svg, .icon--arrowRight svg, .icon--pageTop svg, .icon--check svg, .icon--arrowDown svg, .icon--reverseTriangle svg, .icon--expand svg, .icon--fileAdd svg, .icon--file svg, .icon--scrap svg, .icon--download svg, .icon--logo svg {
+    fill: blue;
+    pointer-events: none; }
+.icon--related svg {
+  fill: #522a82; }
+.icon--follow svg {
+  fill: #522a82; }
+.icon--contact svg {
+  fill: #522a82; }
+.icon--search svg {
+  fill: #ccc; }
+.icon--tag svg {
+  fill: #522a82; }
+.icon--delete {
+  background: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+  .icon--delete svg {
+    fill: #cc6666; }
+.icon--plus svg {
+  fill: #555; }
+.icon--arrowLeft {
+  -moz-transform: rotateZ(-90deg);
+  -ms-transform: rotateZ(-90deg);
+  -webkit-transform: rotateZ(-90deg);
+  transform: rotateZ(-90deg); }
+  .icon--arrowLeft svg {
+    fill: #555; }
+.icon--pageTop svg {
+  fill: #555; }
+.icon--arrowDown {
+  opacity: 0.5;
+  -moz-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg); }
+  .icon--arrowDown svg {
+    fill: #fff; }
+.icon--reverseTriangle svg {
+  fill: #aaa; }
+.icon--expand svg {
+  fill: #fff; }
+.icon--fileAdd svg {
+  fill: #aaa; }
+.icon--file svg {
+  fill: #aaa; }
+.icon--scrap svg {
+  fill: #ccc; }
+.icon--download svg {
+  fill: #522a82; }
+.icon--logo svg {
+  fill: #522a82; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #522a82;
+  color: #333;
+  font-size: 12px;
+  font-family: YuGothic, ‘游ゴシック’, ‘Hiragino Kaku Gothic ProN’, ‘ヒラギノ角ゴ ProN’, Meiryo, メイリオ, sans-serif;
+  line-height: 1.414;
+  overflow-y: scroll; }
+
+.bodyWrapper, .bodyWrapper--noHeader {
+  position: relative;
+  margin: 0 auto;
+  padding: 56px 0 0 0;
+  max-width: 720px;
+  min-height: 100%;
+  z-index: 10;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+.bodyWrapper--noHeader {
+  padding-top: 0; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  line-height: 56px;
+  z-index: 1000;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 6px; }
+  .header:hover {
+    background: rgba(255, 255, 255, 0.98); }
+  .header_logo, .header_logo--withCloseButton {
+    display: block;
+    padding: 0 20px;
+    text-align: center; }
+  .header_logo--withCloseButton {
+    text-align: left; }
+  .header_action--close {
+    position: absolute;
+    top: 0;
+    right: 20px; }
+    .header_action--close a {
+      display: block;
+      color: #555;
+      text-decoration: none; }
+      .header_action--close a .icon--delete svg {
+        fill: #555; }
+
+.content, .content--noHeader {
+  position: relative;
+  width: 100%;
+  z-index: 20;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .content .small, .content--noHeader .small {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 365px; }
+.content {
+  padding: 40px 0 40px 0; }
+.content--noHeader {
+  padding: 40px 0 40px 0; }
+
+.footer {
+  left: 0;
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  z-index: 20;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .footer_nav ul {
+    margin: 0 0 5px 0;
+    padding: 0;
+    list-style: none; }
+  .footer_nav ul li {
+    display: inline-block; }
+  .footer_nav ul li a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    text-decoration: underline;
+    opacity: 0.9;
+    text-shadow: #000 0 0 8px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+  .footer_nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    text-decoration: none; }
+  .footer_copyright {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    font-family: Helvetica, Arial, sans-serif;
+    text-shadow: 0px 0px 3px #333; }
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  background-repeat: none;
+  background-position: center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  transition-property: margin, padding, width, height, background-color, color, opacity, line-height;
+  transition-duration: 1.4s;
+  transition-timing-function: ease-in; }

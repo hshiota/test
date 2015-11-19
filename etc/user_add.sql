@@ -1,0 +1,2 @@
+GRANT SELECT , INSERT , UPDATE , DELETE ON *.* TO testuser@"localhost" IDENTIFIED BY "shaka";
+FLUSH PRIVILEGES;

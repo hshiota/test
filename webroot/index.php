@@ -1,4 +1,5 @@
 <?php
+/* しゃかコード
 $link = mysql_connect('localhost', 'shaka', 'testuser');
 
 if (!$link) {
@@ -38,3 +39,11 @@ while ($row = mysql_fetch_assoc($result)) {
 }
 
 print('</table>');
+*/
+// ↓ 塩田コード
+$db = new Database();
+$res = $db->select('select * from users;');
+$viewFunc->set('user_list', $res);
+$viewFunc->show();
+exit;
+
