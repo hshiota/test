@@ -1,6 +1,6 @@
 <?php
-
 $db = new Database();
 $res = $db->select('select * from users;');
-var_dump($res);exit;
-
+$viewFunc->set('user_list', $res);
+$viewFunc->show();
+exit;

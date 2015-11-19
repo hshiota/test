@@ -1,0 +1,55 @@
+.followEstateList {
+  margin: -19px -19px -30px;
+  list-style: none; }
+.followEstateList_article a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 20px 89px;
+  min-height: 60px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  line-height: 1.5; }
+  .followEstateList_article a:hover {
+    background: #f5f5f5; }
+  .followEstateList_article a:active {
+    background: #eee; }
+  .followEstateList_article a:last-child {
+    margin-bottom: 0; }
+.followEstateList_article_thumbnail {
+  position: absolute;
+  left: 15px; }
+  .followEstateList_article_thumbnail img {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #522a82;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+.followEstateList_article_address {
+  margin: 0 0 5px 0;
+  color: #522a82;
+  font-size: 13px;
+  font-weight: bold;
+  word-break: break-all; }
+.followEstateList_article_category {
+  margin: 0 0 3px 0;
+  display: inline-block;
+  font-weight: bold; }
+.followEstateList_article_time {
+  display: inline-block;
+  color: #737373;
+  font-size: 12px; }
+.followEstateList_article_title {
+  margin: 0 0 0.25em 0;
+  font-size: 12px;
+  font-weight: bold;
+  word-break: break-all; }
+.followEstateList_article_tag {
+  margin: 0 0 0 0;
+  word-break: break-all; }
+  .followEstateList_article_tag span {
+    display: inline; }
+  .followEstateList_article_tag_icon {
+    display: inline-block; }

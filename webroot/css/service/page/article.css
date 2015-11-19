@@ -1,0 +1,96 @@
+.articleList {
+  margin: -19px -19px -30px;
+  list-style: none;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 40px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 40px; }
+.articleList_article a {
+  position: relative;
+  display: block;
+  padding: 10px 15px 15px 89px;
+  min-height: 85px;
+  border-bottom: 1px solid #e7e7e7;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  line-height: 1.5; }
+  .articleList_article a:hover {
+    background: #f5f5f5; }
+  .articleList_article a:active {
+    background: #eee; }
+  .articleList_article a:last-child {
+    margin-bottom: 0; }
+.articleList_article_thumbnail {
+  position: absolute;
+  left: 15px;
+  width: 64px;
+  height: 64px;
+  background: #eee; }
+  .articleList_article_thumbnail img {
+    width: 64px;
+    height: 64px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+.articleList_article_postStatus, .articleList_article_postStatus--check, .articleList_article_postStatus--ok, .articleList_article_postStatus--ng {
+  position: absolute;
+  top: 74px;
+  left: 15px;
+  display: block;
+  padding: 0;
+  width: 64px;
+  height: 19px;
+  background: #eee;
+  color: #000;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+.articleList_article_postStatus--check {
+  background: #ffc340;
+  color: #522a82; }
+.articleList_article_postStatus--ok {
+  background: #ed4437;
+  color: #fff; }
+.articleList_article_postStatus--ng {
+  background: #1e1e1e;
+  color: #fff; }
+.articleList_article_category {
+  margin: 0 0 1px 0;
+  font-size: 12px;
+  font-weight: bold; }
+.articleList_article_time {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #737373;
+  font-size: 12px; }
+.articleList_article_title {
+  margin: 0 0 2px 0;
+  color: #522a82;
+  font-size: 14px;
+  font-weight: bold;
+  word-break: break-all; }
+.articleList_article_address {
+  margin: 0 0 2px 0;
+  font-size: 12px;
+  word-break: break-all; }
+.articleList_article_tag {
+  margin: 0 0 0 0; }
+.articleList_article_tag_tagItem {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 5px 0;
+  padding: 0;
+  font-size: 12px;
+  word-break: break-all;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+  .articleList_article_tag_tagItem span {
+    display: inline; }
+.articleList_article_tag_tagItem_icon {
+  margin: 0 3px 0 0;
+  display: inline-block; }
