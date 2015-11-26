@@ -42,8 +42,7 @@ print('</table>');
 */
 // ↓ 塩田コード
 $db = new Database();
-$res = $db->select('select * from users;');
+$res = $db->select('select id, name, updated_date from users;');
 $viewFunc->set('user_list', $res);
 $viewFunc->show();
 exit;
-

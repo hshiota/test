@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+.user_detail{
+	margin: 40px auto 0;
+	/*margin-top: 40px;*/
+	padding : 10px;
+	border: 2px solid #eee;
+	border-radius: 10px;
+	width:40%;
+}
+.user_detail table{
+	width : 100%;
+}
+.user_detail table tr{
+	border-bottom : 1px solid #dddddd;
+}
+.user_detail table tr:last-child {
+	border-bottom : none;
+}
+.user_detail table th {
+	background-color : #f4f4f4;
+	font-size: 16px;
+}
+.user_detail table tr td{
+	padding : 10px;
+	border-right : 1px solid #dddddd;
+	text-align: center;
+}
+.user_detail table tr td:last-child {
+	border-right : none;
+}
+.bugA {
+	color: #eeeeee;
+	font-size: 25px;
+	position: absolute;
+	z-index: 1002;
+}
+.bugB {
+	color: #eeeeee;
+	position: absolute;
+	z-index: 1001;
+}
+.bugC {
+	color: #eeeeee;
+	position: absolute;
+	z-index: 1000;
+}
+
+div.button {
+	margin: 0 auto;
+	width: 100px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #ccc;
+	padding: 5px 20px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #666;
+	text-align: center;
+}

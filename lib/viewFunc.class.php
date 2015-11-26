@@ -23,6 +23,20 @@ class ViewFunc {
 	public $cssFiles = array(
 	);
 
+// DBのカラム名を変換するための配列
+	public $convert_col_name = array(
+	  'id' => '会員ID',
+	  'name' => '会員氏名',
+	  'updated_date' => '更新日',
+	  'address' => '住所',
+	  'tel' => '電話番号',
+	  'sex' => '性別',
+	  'nickname' => 'ニックネーム',
+	  'work' => '仕事',
+	  'hobby' => '趣味'
+	);
+
+
 	function __construct(){
 	}
 
@@ -50,7 +64,7 @@ class ViewFunc {
 		foreach ($this->inc_files['before'] as $file_path) {
 			include_once(VIEW_DIR . $file_path);
 		}
-		
+
 		include_once(VIEW_DIR . $view_file_name);
 		foreach ($this->inc_files['after'] as $file_path) {
 			include_once(VIEW_DIR . $file_path);
@@ -63,6 +77,7 @@ class ViewFunc {
 	}
 
 	public function publishStaticFiles($files, $kind = ''){
+		return $files;
 		// 常に静的ファイルをリフレッシュする場合
 		$allWaysPublishStatic = ShakaConf::getViewSetting('allWaysPublishStatic');
 		if (!$allWaysPublishStatic || !$kind || false) {
@@ -72,7 +87,8 @@ class ViewFunc {
 		$signature = $this->getOneTimesignature();
 		if (file_exists($publishdFileDir) && is_array($files)){
 			CommonFunc::rmdirR($publishdFileDir);
-			mkdir($publishdFileDir);
+			mkdir($publishdFileDir, 0777);
+			chmod($publishdFileDir, 0777);
 		}
 		if (is_array($files)){
 			foreach ($files as $key => $file){
@@ -94,12 +110,37 @@ class ViewFunc {
 		$paths[] = implode('.', $file_names); // ファイル名を元に戻す
 		$publishd_file_path = implode(DS, $paths) . '.' . $signature .  '.' . $ext; // ファイル名を元に戻して、名前を変更
 		$publishd_file_path = str_replace(DS . $kind . DS, DS . $kind . DS . $this->publishdFileDir . DS , $publishd_file_path);
+		var_dump($publishd_file_path);
+
 		copy(WEB_ROOT_DIR . $file, WEB_ROOT_DIR . $publishd_file_path);
 		return $publishd_file_path;
 	}
 
 	function getOneTimesignature(){
 		return sha1($this->staticFilePublishSignature . microtime());
+	}
+
+	function createLink($msg, $link, $param = array()) {
+		$stmt = $link;
+		foreach($param as $key => $value) {
+			$stmt .=	'?' . $key . '=' . $value . '&';
+		}
+		// param がある場合は最後の & が余計なので消す
+		if ($param !== array()) {
+			$stmt = substr($stmt, 0, -1);
+		}
+
+		return $stmt;
+	}
+
+	function createLinkText($msg, $link, $param = array()) {
+		$stmt = $this->createLink($msg, $link, $param);
+		return '<a href="'. $stmt . '">' . $msg . '</a>';
+	}
+
+	function createLinkButton($msg, $link, $param = array()) {
+		$stmt = $this->createLink($msg, $link, $param);
+		return '<input type="button" onclick="location.href="' . $stmt . '" value="' . $msg . '">';
 	}
 
 }

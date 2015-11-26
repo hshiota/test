@@ -3,7 +3,7 @@
 .user_list{
 	margin: 50px 100px;
 	padding : 10px;
-	border: 2px solid #dddddd;
+	border: 2px solid #eee;
 	border-radius: 10px;
 }
 .user_list table{
@@ -42,4 +42,3 @@
 	position: absolute;
 	z-index: 1000;
 }
-
