@@ -13,7 +13,7 @@ if(isset($user_list) && $user_list && count($user_list) > 0) {
 		echo '<tr>';
 		foreach($value as $colKey => $colValue) {
 			if ($colKey == 'id') {
-				echo '<td>' . $this->createLink($colValue, 'detail.php', array('id' => $colValue)) . '</td>';
+				echo '<td>' . $this->createLinkText($colValue, 'detail.php', array('id' => $colValue)) . '</td>';
 			} else {
 			echo '<td>' . $colValue . '</td>';
 			}

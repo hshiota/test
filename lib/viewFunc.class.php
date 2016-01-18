@@ -120,13 +120,15 @@ class ViewFunc {
 		return sha1($this->staticFilePublishSignature . microtime());
 	}
 
-	function createLink($msg, $link, $param = array()) {
+	function createLink($link, $param = array()) {
 		$stmt = $link;
-		foreach($param as $key => $value) {
-			$stmt .=	'?' . $key . '=' . $value . '&';
-		}
-		// param がある場合は最後の & が余計なので消す
+
+		// パラメータがあれば付け加える
 		if ($param !== array()) {
+			foreach($param as $key => $value) {
+				$stmt .=	'?' . $key . '=' . $value . '&';
+			}
+			//最後の & が余計なので消す
 			$stmt = substr($stmt, 0, -1);
 		}
 
@@ -134,13 +136,13 @@ class ViewFunc {
 	}
 
 	function createLinkText($msg, $link, $param = array()) {
-		$stmt = $this->createLink($msg, $link, $param);
+		$stmt = $this->createLink($link, $param);
 		return '<a href="'. $stmt . '">' . $msg . '</a>';
 	}
 
 	function createLinkButton($msg, $link, $param = array()) {
-		$stmt = $this->createLink($msg, $link, $param);
-		return '<input type="button" onclick="location.href="' . $stmt . '" value="' . $msg . '">';
+		$stmt = $this->createLink($link, $param);
+		return "<input type='button' onClick='location.href=\"{$stmt}\"' value='{$msg}'>";
 	}
 
 }

@@ -21,8 +21,9 @@ if(isset($user_detail) && $user_detail && count($user_detail) == 1) {
 </div>
 </div>
 
-<?php
-echo $this->createLinkButton('編集', 'edit.php?id=' . $_GET['id']);
-echo$this->createLinkButton('一覧に戻る', 'index.php');
-
-?>
+<div class="buttons">
+  <?php
+  echo $this->createLinkButton('編集', 'edit.php', array('id' => $_GET['id']));
+  echo $this->createLinkButton('一覧に戻る', 'index.php');
+  ?>
+</div>

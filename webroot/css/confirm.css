@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.user_detail{
+.form_data{
 	margin: 40px auto 0;
 	/*margin-top: 40px;*/
 	padding : 10px;
@@ -8,25 +8,25 @@
 	border-radius: 10px;
 	width:40%;
 }
-.user_detail table{
+.form_data table{
 	width : 100%;
 }
-.user_detail table tr{
+.form_data table tr{
 	border-bottom : 1px solid #dddddd;
 }
-.user_detail table tr:last-child {
+.form_data table tr:last-child {
 	border-bottom : none;
 }
-.user_detail table th {
+.form_data table th {
 	background-color : #f4f4f4;
 	font-size: 16px;
 }
-.user_detail table tr td{
+.form_data table tr td{
 	padding : 10px;
 	border-right : 1px solid #dddddd;
 	text-align: center;
 }
-.user_detail table tr td:last-child {
+.form_data table tr td:last-child {
 	border-right : none;
 }
 .bugA {
@@ -47,6 +47,11 @@
 }
 
 .buttons {
-	margin: 30px auto 0;
+	margin: 40px 40px;
 	text-align: center;
+}
+
+.confirmingMessage {
+	text-align: center;
+	margin-top: 40px;
 }

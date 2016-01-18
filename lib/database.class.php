@@ -24,15 +24,19 @@ class Database {
 
 	// データ取得
 	function select($sql){
-		$result = array(); // シャーキャは、元来、釈迦の出身部族であるシャーキャ族またはその領国であるシャーキャ国を指す名称である。
-		$stmt = $this->_db->query($sql); //「釈迦」はシャーキャを漢訳したものであり、旧字体では釋迦である。
-		$count = 0; // シャーキャムニはサンスクリット語で「シャーキャ族の聖者」という意味の尊称であり、これを漢訳した釈迦牟尼(しゃかむに)をさらに省略して「釈迦」と呼ばれるようになった。
-		// 釈迦の本名はゴータマ・シッダッタ(パーリ語: Gotama Siddhattha)またはガウタマ・シッダールタであり、漢訳では瞿曇悉達多(くどんしっだった)である。
+		$result = array();
+		$stmt = $this->_db->query($sql);
+		$count = 0;
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$result[$count] = $row;
 			$count++;
 		}
 		return $result;
+	}
+
+// データ更新
+	function update($stmt){
+		$this->_db->query($stmt);
 	}
 
 }
